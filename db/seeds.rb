@@ -10,8 +10,8 @@
     title: "haho",
     subtitle: "hoooooooo",
     body: "nice",
-    main_image: "placehold",
-    thumb_image: "placehold"
+    main_image: "http://via.placeholder.com/350x150",
+    thumb_image: "http://via.placeholder.com/350x150"
 
   )
 end

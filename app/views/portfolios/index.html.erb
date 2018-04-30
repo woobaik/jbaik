@@ -1,5 +1,13 @@
 <h1>Portfolios#index</h1>
-<p>Find me in app/views/portfolios/index.html.erb</p>
+<%= link_to 'Add New', new_portfolio_path %>
 
 
-<p><%= @portfolios.inspect %></p>
+<p><% @portfolios.each do |port| %></p>
+        <h2><%=port.title  %></h2>
+        <hr>
+            <%=port.subtitle  %><br>
+            <%=port.body  %><br>
+            <%=image_tag port.main_image  %><br>
+            <%=image_tag port.thumb_image  %><br>
+          <hr>
+      <% end %>
