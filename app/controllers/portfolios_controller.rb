@@ -12,7 +12,7 @@ class PortfoliosController < ApplicationController
 
     respond_to do |format|
       if @portfolio.save
-        format.html {redirect_to portfolio_path, notice: "Your fortolio item is now live."}
+        format.html {redirect_to portfolio_path(@portfolio), notice: "Your fortolio item is now live."}
       else
         format.html {render :new}
       end
@@ -20,7 +20,7 @@ class PortfoliosController < ApplicationController
   end
 
   def show
-
+    @portfolio = Portfolio.find(params[:id])
   end
 
   def edit

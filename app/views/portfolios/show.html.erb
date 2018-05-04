@@ -1,1 +1,8 @@
-<h1>haha</h1>
+<h1><%= @portfolio.title %> </h1>
+<hr>
+<h3><%= @portfolio.subtitle %></h3>
+<br>
+<h4><%= @portfolio.body %></h4>
+
+<%= image_tag @portfolio.main_image %><br>
+<%= image_tag @portfolio.thumb_image %>
