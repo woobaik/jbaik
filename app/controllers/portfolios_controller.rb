@@ -39,6 +39,14 @@ class PortfoliosController < ApplicationController
     end
   end
 
+  def angular
+    @portfolio_angular = Portfolio.angular
+  end
+
+  def rubyonrails
+    @portfolio_ruby_on_rails = Portfolio.ruby_on_rails
+  end
+
   def destroy
   end
 

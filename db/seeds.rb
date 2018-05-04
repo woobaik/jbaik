@@ -15,3 +15,13 @@
 
   )
 end
+
+
+2.times do |portfolio|
+  Portfolio.create!(
+      title: "haho",
+      subtitle: "angular",
+      body: "angualr is good",
+      main_image: "http://via.placeholder.com/350x150",
+      thumb_image: "http://via.placeholder.com/350x150")
+end
