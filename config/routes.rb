@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   resources :portfolios
   get 'angular-item', to: 'portfolios#angular'
   get 'ruby-on-rails', to: 'portfolios#rubyonrails'
