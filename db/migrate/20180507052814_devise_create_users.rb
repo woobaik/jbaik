@@ -9,7 +9,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.1]
 
       ## Custom field
 
-      t.string :name, null: false
+      t.string :name
       ## Recoverable
       t.string   :reset_password_token
       t.datetime :reset_password_sent_at
