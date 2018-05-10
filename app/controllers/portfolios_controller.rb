@@ -3,6 +3,7 @@ class PortfoliosController < ApplicationController
 
   def index
     @portfolios = Portfolio.all
+    @page_title = "Jbaik's Portfolio"
   end
 
   def new
@@ -23,6 +24,7 @@ class PortfoliosController < ApplicationController
 
   def show
     @portfolio = Portfolio.find(params[:id])
+    @page_title = Portfolio.find(params[:id]).title
   end
 
   def edit
