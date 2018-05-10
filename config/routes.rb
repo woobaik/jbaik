@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'pages/home'
+
+  get 'pages/about'
+
+  get 'pages/contact'
+
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register'}
   resources :portfolios
   get 'angular-item', to: 'portfolios#angular'
