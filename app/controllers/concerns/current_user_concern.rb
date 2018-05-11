@@ -6,7 +6,7 @@ module CurrentUserConcern
   end
 
   def guest_user
-    guest = Guest.new
+    guest = GuestUser.new
     guest.name = "Guest"
     guest.email = "guest@guest.net"
     guest
