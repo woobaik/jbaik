@@ -55,3 +55,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # https://rubygems.org/gems/petergate/versions/1.6.3
 gem 'petergate', '~> 1.6', '>= 1.6.3'
+# https://github.com/twbs/bootstrap-rubygem/blob/master/README.md
+gem 'bootstrap', '~> 4.1.1'
