@@ -1,5 +1,5 @@
 <h1>Rails Portfolio</h1>
-<%= link_to 'Add New', new_portfolio_path %>
+<%= link_to 'Add New', new_portfolio_path if logged_in?(:admin, :customer, :etc)  %>
 
 
 <p><% @portfolio_ruby_on_rails.each do |port| %></p>
@@ -9,7 +9,7 @@
             <%=port.body  %><br>
             <%=image_tag port.main_image  %><br>
             <%=image_tag port.thumb_image  %><br>
-          <%= link_to 'EDIT', edit_portfolio_path(port) %><br>
+          <%= link_to 'EDIT', edit_portfolio_path(port) if logged_in?(:admin, :customer, :etc)  %><br>
           <%= link_to 'SHOW', portfolio_path(port) %>
           <hr>
       <% end %>

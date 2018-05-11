@@ -8,4 +8,4 @@
 <%= image_tag @portfolio.thumb_image %>
 <br>
 <%= link_to 'List', portfolios_path %>
-<%= link_to 'Edit', edit_portfolio_path(@portfolio) %>
+<%= link_to 'Edit', edit_portfolio_path(@portfolio) if logged_in?(:admin, :customer, :etc)  %>
