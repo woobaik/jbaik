@@ -9,6 +9,7 @@ module ApplicationHelper
 
     else
       link_to 'Log out', destroy_user_session_path, method: :delete
+
     end
   end
 end

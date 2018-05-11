@@ -1,5 +1,8 @@
 class PortfoliosController < ApplicationController
   layout 'portfolios'
+  access all: [:show, :index, :rubyonrails, :angular],
+         user: {except: [:destroy, :new, :create, :edit, :update]},
+         company_admin: :all
 
   def index
     @portfolios = Portfolio.all
